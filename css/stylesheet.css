@@ -1,0 +1,97 @@
+.chimunthu-lgpd-bar-main {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 400;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+.chimunthu-lgpd-bar-main .chimunthu-lgpd-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+
+.chimunthu-lgpd-bar-main .chimunthu-lgpd-bar__content {
+    margin: 0 56px 0 0;
+}
+
+.chimunthu-lgpd-bar-main .chimunthu-lgpd-bar__content__text {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+
+.chimunthu-lgpd-bar-main .chimunthu-lgpd-bar__content__text a {
+    color: var(--fg-color);
+    text-decoration: underline;
+}
+
+.chimunthu-lgpd-bar__close-btn .chimunthu-lgpd-button {
+    background-color: #ff1430;
+    width: max-content;
+    /* transform: skewX(-18deg); */
+    height: 40px !important;
+    padding: 0 30px;
+    min-width: 130px;
+    max-width: calc(100% - 14px);
+}
+
+.lgpd-button {
+    width: 260px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+    background-color: #e50353;
+    margin: auto;
+    padding: 13px;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.lgpd-button span,
+.lgpd-button .chimunthu-lgpd-button__label {
+    color: #edede3;
+    line-height: 1;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.lgpd-button .chimunthu-lgpd-button__label {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 720px) {
+    .chimunthu-lgpd-bar-main .chimunthu-lgpd-bar {
+        padding: 24px;
+        flex-direction: column;
+    }
+    .chimunthu-lgpd-bar-main .chimunthu-lgpd-bar__content {
+        text-align: justify;
+        margin: 0 0 20px 0;
+    }
+    /* .chimunthu-lgpd-bar-main .chimunthu-lgpd-bar__content__text {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    } */
+}
